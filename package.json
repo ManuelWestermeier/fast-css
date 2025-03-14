@@ -17,9 +17,7 @@
         "design"
     ],
     "dependencies": {},
-    "devDependencies": {
-        "nodemon": "^3.0.0"
-    },
+    "devDependencies": {},
     "author": "Manuel Westermeier",
     "license": "MIT",
     "repository": {
