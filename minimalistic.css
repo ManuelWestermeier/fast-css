@@ -9,7 +9,8 @@
         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 350;
     font-size: 1rem;
-    line-height: 1.5; /* Adjusted for improved readability */
+    line-height: 1.5;
+    /* Adjusted for improved readability */
 }
 
 /* Define light theme variables as default */
@@ -17,7 +18,8 @@
     --background-color: #ffffff;
     --text-color: #333333;
     --accent-color: #007BFF;
-    --accent-hover: #0056b3; /* Darker variant for hover */
+    --accent-hover: #0056b3;
+    /* Darker variant for hover */
     --border-color: #dddddd;
 }
 
@@ -26,7 +28,8 @@
     --background-color: #121212;
     --text-color: #e0e0e0;
     --accent-color: #BB86FC;
-    --accent-hover: #9a4eff; /* A darker variant of the accent color */
+    --accent-hover: #9a4eff;
+    /* A darker variant of the accent color */
     --border-color: #333333;
 }
 
@@ -108,9 +111,11 @@ button {
     transition: background-color 0.3s ease;
     border: 1px solid var(--border-color);
 }
+
 button:hover {
     background-color: var(--accent-hover);
 }
+
 button:hover,
 input:focus,
 textarea:focus {
@@ -122,8 +127,10 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 400px;  /* Fixed maximum width for forms */
-    margin: 0 auto;    /* Center the form */
+    max-width: 400px;
+    /* Fixed maximum width for forms */
+    margin: 0 auto;
+    /* Center the form */
 }
 
 /* Each form field as a flex column (label and control) */
@@ -138,6 +145,7 @@ a {
     color: var(--accent-color);
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
@@ -153,4 +161,22 @@ a:hover {
 
 .mb-1 {
     margin-bottom: 1rem;
+}
+
+img,
+video,
+audio {
+    width: 100%;
+    border-radius: 5px;
+}
+
+div,
+main,
+select,
+footer,
+header,
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
