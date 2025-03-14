@@ -1,6 +1,6 @@
 {
     "name": "mwcss",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A minimalistic and lightweight CSS library for modern web design.",
     "main": "index.css",
     "scripts": {
@@ -25,5 +25,5 @@
     "bugs": {
         "url": "https://github.com/ManuelWestermeier/fast-css/issues"
     },
-    "homepage": "https://github.com/ManuelWestermeier/fast-css#readme"
+    "homepage": "https://manuelwestermeier.github.io/fast-css/"
 }
