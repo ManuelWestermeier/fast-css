@@ -1,0 +1,156 @@
+/* Minimalistic.css - A minimal CSS library with dark/light mode support */
+
+/* Base reset & typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
+    font-size: 1rem;
+    line-height: 1.5; /* Adjusted for improved readability */
+}
+
+/* Define light theme variables as default */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --accent-color: #007BFF;
+    --accent-hover: #0056b3; /* Darker variant for hover */
+    --border-color: #dddddd;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --accent-color: #BB86FC;
+    --accent-hover: #9a4eff; /* A darker variant of the accent color */
+    --border-color: #333333;
+}
+
+/* Global styling using the variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Headings */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+h6 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Fieldset */
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Common styling for inputs, textareas, and buttons */
+input,
+textarea,
+button {
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+    cursor: pointer;
+    height: 30px;
+    padding: 0 1rem;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+button:hover {
+    background-color: var(--accent-hover);
+}
+button:hover,
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--text-color);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;  /* Fixed maximum width for forms */
+    margin: 0 auto;    /* Center the form */
+}
+
+/* Each form field as a flex column (label and control) */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Links */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Utility classes (optional) */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
